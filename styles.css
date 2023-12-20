@@ -116,6 +116,11 @@ https://colorhunt.co/palette/e3fdfdcbf1f5a6e3e971c9ce
 
 .footer-link {
     color: #11999E;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bottom-container .footer-link:hover {
+    transform: scale(2) !important;
 }
 
 .middle-container {
@@ -125,14 +130,12 @@ https://colorhunt.co/palette/e3fdfdcbf1f5a6e3e971c9ce
 .intro {
     width: 30%;
     margin: auto;
-
 }
 .skill-row {
     margin: 100px auto 100px auto;
     width: 50%;
     text-align: left;
     line-height: 2;
-
 }
 
 .top-cloud {
