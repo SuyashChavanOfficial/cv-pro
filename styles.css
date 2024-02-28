@@ -1,156 +1,59 @@
-body {
-    color: #40414E;
-    margin: 0;
-    text-align: center;
-    font-family: 'Merriweather', serif;
+:root {
+
+    /* colours  */
+    --raw-seinna: hsl(24, 74%, 58%);
+    --sizzling-sunrise: hsl(51, 95%, 54%);
+    --scarlet: hsl(13, 96%, 47%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+
+    /* typography */
+    --ff-saira-stencil-one: "Saira Stencil One", sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-roboto: 'Roboto', sans-serif;
+
+    --fs-1: 2rem;
+    --fs-2: calc(1.813rem + 1vw);
+    --fs-3: calc(1.313rem + 1vw);
+    --fs-4: 1.4rem;
+    --fs-5: 1rem;
+    --fs-6: 0.813rem;
+    --fs-7: 0.75rem;
+
+    --fw-400: 400;
+    --fw-700: 700;
+
+    /* Transition  */
+    --transition-1: 0.25s ease-in-out;
+
+    /* Spacing  */
+    --section-padding: 80px;
+
+    /* Border Radius  */
+    --radius-4: 4px;
+    --radius-12: 12px;
 }
 
-h1 {
-    margin: 50px auto 0 auto;
-    font-family: 'Sacramento', cursive;
-    font-size: 90px;
-    color: #66BFBF;
-    line-height: 2;
+/* THEME COLOURS  */
+
+body.dark_theme {
+    --bg-primary: hsl(0, 0%, 12%);
+    --bg-secondary: hsl(0, 0%, 19%);
+    --color-primary: hsl(0, 0%, 100%);
+    --color-secondary: hsl(0, 0%, 62%);
+    --card-shadow: hsla(0, 0%, 0%, 0.4);
+    --input-bg: hsl(0, 0%, 16%);
+
+    --shadow-1: 10px 10px 40px var(--card-shadow);
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    color: #66BFBF;
-    font-weight: normal;
-    padding-bottom: 10px;
-}
+body.light_theme {
+    --bg-primary: hsl(0, 0%, 90%);
+    --bg-secondary: hsl(0, 0%, 100%);
+    --color-primary: hsl(0, 0%, 12%);
+    --color-secondary: hsl(0, 0%, 37%);
+    --card-shadow: hsla(0, 0%, 0%, 0.1);
+    --input-bg: hsl(0, 0%, 93%);
 
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #11999E;
-}
-
-p {
-    line-height: 2;
-}
-
-a {
-    color: #11999E;
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px 20px;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #EAF6F6;
-}
-
-hr {
-    border: dotted #EAF6F6 6px;
-    border-bottom: none;
-    width: 4%;
-    margin: 100px auto;    
-}
-
-/*colour palatte link
-https://colorhunt.co/palette/e3fdfdcbf1f5a6e3e971c9ce
-*/
-
-.bottom-container {
-    background-color: #66BFBF;
-    padding: 50px 0 20px;
-}
-
-.bottom-cloud {
-    position: absolute;
-    left: 250px;
-    bottom: 300px;
-}
-
-.btn {
-    background: #11cdd4;
-    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background: #30e3cb;
-    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-    text-decoration: none;
-}
-
-.chess-img {
-    width: 25%;
-    float: right;
-    margin-left: 30px;
-}
-
-.code-img {
-    width: 25%;
-    float: left;
-    margin-right: 30px;
-}
-
-.contact-me-des {
-    width: 40%;
-    margin: 40px auto 60px;
-}
-
-
-.copyright {
-    color: #EAF6F6;
-    font-size: 0.75 rem;
-    padding: 10px 0px;
-}
-
-.footer-link {
-    color: #11999E;
-    transition: transform 0.3s ease-in-out;
-}
-
-.bottom-container .footer-link:hover {
-    transform: scale(2) !important;
-}
-
-.middle-container {
-    margin: 100px 0;
-}
-
-.intro {
-    width: 30%;
-    margin: auto;
-}
-.skill-row {
-    margin: 100px auto 100px auto;
-    width: 50%;
-    text-align: left;
-    line-height: 2;
-}
-
-.top-cloud {
-    position: absolute;
-    right: 300px;
-    top: 40px;
-}
-
-.top-container {
-    background-color: rgb(227, 253, 253);
-    position: relative;
-    padding-top: 100px;
-}
-
-.profile-photo {
-    border-radius: 50%;
-    width: 650px;
+    --shadow-1: 10px 10px 40px var(--card-shadow);
 }
